@@ -1,0 +1,16 @@
+.bounding-box {
+	position: absolute;
+	box-shadow: 0 0 0 3px red inset;
+	display: flexbox;
+	flex-wrap: wrap;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.information {
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+}

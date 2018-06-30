@@ -1,0 +1,32 @@
+.Tilt {
+  background: linear-gradient(89deg, #fc00ff 0%, #00dbde 100%);
+  font-size: 100px;
+  text-align: center;
+}
+
+.logotext {
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+}
+
+.emoji {
+	display: inline-block;
+	animation: 
+		color 1s linear infinite,
+		rotate 2s ease-in-out infinite;
+	
+	&:nth-child(2) { animation-delay: -.66s; }
+	&:nth-child(3) { animation-delay: -1.33s; }
+}
+
+@keyframes color {
+	50% { filter: hue-rotate(360deg); }
+}
+
+@keyframes rotate {
+	0%, 100% { transform: rotate(20deg); }
+	25% { transform: scale(1.1); }
+	50% { transform: rotate(-20deg); }
+	75% { transform: scale(.9); }
+}
